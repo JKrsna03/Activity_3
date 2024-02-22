@@ -3,35 +3,108 @@
 
 <head>
 
+    <style>
+
+        #divContainer 
+        {
+            text-align: center;
+        }
+
+        #background
+        {
+            background-color: cadetblue;
+        }
+
+        #headerColor 
+        {
+            color: white;
+        }
+        
+        #paragraphColor 
+        {
+            color: white;
+        }
+        
+        .btnColor
+        {
+            background-color: cadetblue;
+            color: white;
+        }
+
+        .Username
+        {
+            color: white;
+            background-color: cadetblue;
+        }
+
+        .Password
+        {
+            color: white;
+            background-color: white;
+        }
+
+        .Password:hover 
+        {
+            color: black;
+        }
+
+    </style>
+
     <title>Login</title>
 
 </head>
 
-<body>
-    <div style="text-align: center;">
-        
-        <h1>Login</h1>
-        <input type="text" placeholder="Username" id="txtUsername" />
-        <input type="text" placeholder="Password" id="txtPassword" />
-        <div style="margin-top: 1rem;">
+<body id="background">
 
-            <Button id="btnlogin">
-                Login
-            </Button>
+    <div id="divContainer">
+
+        <h1 id="headerColor">Login</h1>
+        <div style="text-align: center;">
+
+            <div style="margin-bottom: 1rem;">
+
+                <input type="text" placeholder="Username" id="txtUsername" class="Username">
+
+            </div>
+            <div style="margin-bottom: 1rem;">
+
+                <input type="text" placeholder="Password" id="txtPassword" class="Password">
+                
+            </div>
 
         </div>
+
+        <div>
+
+            <Button id="btnlogin" class="btnColor">
+                Login 
+            </Button>
+            
+        </div>
+
+        <div>
+
+            <p id="paragraphColor">
+                Hover the password to show
+            </p>
+
+        </div>
+        
 
     </div>
 
 </body>
 
-<script>
-    //JavaScript
-    console.log("Hello World")
-    let buttonLogin = document.querySelector('#btnlogin');
-    buttonLogin.onclick = function () {
-        alert("Login Succesfully.")
-    };
-</script>
+    <script>
+
+        //JavaScript
+        console.log("Hello World")
+        let buttonLogin = document.querySelector('#btnlogin');
+        buttonLogin.onclick = function () 
+        {
+            alert("Login Succesfully!")
+        };
+    
+    </script>
 
 </html>
